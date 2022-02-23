@@ -10,7 +10,7 @@ from PIL import Image
 st.write(""" 
 # DIABETICS STATUS  PREDICTION APP!
 """)
-image=Image.open(r'C:\Users\FMC OWO\Downloads\gluco.png')
+image=Image.open('gluco.png')
 st.image(image, caption='virtual glucometer')
 model = pickle.load(open('class_model.pkl', 'rb'))
                          
